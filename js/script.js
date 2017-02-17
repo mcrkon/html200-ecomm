@@ -48,3 +48,14 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+
+function sort(){
+  console.log(document.sortForm.filter.value);
+  event.preventDefault();
+}
+
+for(var i = 0; i<products.length; i++){
+  console.log(products[i].name);
+  console.log(products[i].description);
+  console.log(products[i].price);
+}
