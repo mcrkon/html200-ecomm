@@ -59,3 +59,12 @@ for(var i = 0; i<products.length; i++){
   console.log(products[i].description);
   console.log(products[i].price);
 }
+
+var cart = [ {name: "Reversible Plaid"}, {name: "Wool Cable Knit"}, {name: "Northern Lights"}, {name: "Ombre Infinity"}, {name:"Fringed Plaid"}, {name: "Multi Color"}, {name: "Etro Paisley-Print"}, {name: "Ashby Twill"} ];
+
+
+function clicker(name){
+  
+  var i = cart.findIndex(function(el){
+    return el.name.toLowerCase() == name  
+  });
