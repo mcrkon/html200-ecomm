@@ -60,11 +60,23 @@ for(var i = 0; i<products.length; i++){
   console.log(products[i].price);
 }
 
+function updateCart (name, price) {
+    if (arr.indexOf(name) === -1) {
+        arr.push(name);
+        console.log('New carts is : ' + name);
+    } else if (arr.indexOf(searchElement) > -1) {
+        console.log(index + ' already in the cart');
+    }
+}
+
 var cart = [ {name: "Reversible Plaid"}, {name: "Wool Cable Knit"}, {name: "Northern Lights"}, {name: "Ombre Infinity"}, {name:"Fringed Plaid"}, {name: "Multi Color"}, {name: "Etro Paisley-Print"}, {name: "Ashby Twill"} ];
 
-
+arr.indexOf(searchElement)
+arr.indexOf(searchElement, fromIndex)
 function clicker(name){
   
   var i = cart.findIndex(function(el){
     return el.name.toLowerCase() == name  
   });
+  
+  
